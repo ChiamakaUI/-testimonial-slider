@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+
+body {
+  background-image: url(./images/pattern-quotes.svg),
+    url(./images/pattern-curve.svg), url(./images/pattern-bg.svg);
+  background-repeat: no-repeat;
+  background-color: hsl(240, 18%, 77%);
+  background-attachment: fixed;
+  background-position: 300px 60px, left bottom, right center;
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  width: 90%;
+  margin: 5% auto;
+  position: relative;
+}
+
+.container {
+  display: none;
+}
+
+.showing {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.image {
+  width: 540px !important;
+  height: 540px !important;
+  border-radius: 5px;
+  order: 2;
+}
+
+.caption {
+  order: 1;
+}
+
+.caption_main {
+  font-size: 20px;
+  color: hsl(240, 38%, 20%);
+  font-family: "Inter", sans-serif;
+}
+
+.name {
+  font-size: 16px;
+}
+
+.job_role {
+  font-size: 12px;
+  margin-left: 5px;
+  opacity: 0.5;
+}
+
+.cursor {
+  background-color: #fff;
+  border-radius: 15px;
+  width: 6%;
+  margin: 25px auto 0;
+  padding: 7px 3px;
+  align-items: center;
+  position: absolute;
+  top: 92%;
+  left: 48%;
+}
+
+#prev_btn {
+  margin-left: 14%;
+  cursor: pointer;
+  margin-right: 12%;
+}
+
+#next_btn {
+  margin-left: 12%;
+  margin-right: 10%;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  body {
+    background-image: url(./images/pattern-quotes.svg),
+      url(./images/pattern-curve.svg), url(./images/pattern-bg.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(240, 18%, 77%);
+    background-size: 100px, 250px, 400px;
+    background-attachment: fixed;
+    background-position: center, left bottom, 20px 10px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .showing {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 5px auto;
+  }
+
+  .image {
+    width: 250px !important;
+    height: 320px !important;
+    border-radius: 5px;
+  }
+
+  .caption {
+    margin: 50px !important;
+  }
+
+  .caption_main {
+    font-size: 18px;
+  }
+
+
+  .cursor {
+    position: absolute;
+    top: 46%;
+    left: 35%;
+    width: 22%;
+    height: 20px;
+  }
+}
